@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/tealBG"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.testapp.ResultsActivity"
+    tools:showIn="@layout/activity_results">
+
+    <TextView
+        android:id="@+id/score_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your score is: "
+        android:textColor="@color/greenModerate" />
+
+    <TextView
+        android:id="@+id/question_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You answered "
+        android:textColor="@color/greenModerate"
+        android:layout_below="@+id/score_result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <RatingBar
+        android:id="@+id/rating_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_below="@+id/question_result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp"
+        android:isIndicator="true"/>
+
+    <TextView
+        android:id="@+id/rating_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/tealHint"
+        android:layout_below="@+id/rating_star"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/backToMainMenu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/greenDark"
+        android:onClick="backToMain"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />/>
+
+</RelativeLayout>

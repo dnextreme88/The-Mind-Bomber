@@ -1,0 +1,105 @@
+<resources>
+    <!-- MAIN MENU -->
+    <string name="app_name">The Mind Bomber</string>
+    <string name="menuNewGame">New Game</string>
+    <string name="menuInstructions">Instructions</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuCredits">Credits</string>
+    <!-- DIFFICULTY LEVELS -->
+    <string name="title_activity_levels">Difficulty Levels</string>
+    <string name="level_hint">Please select a level to play.</string>
+    <!-- EASY MODE -->
+    <string name="modeEasy">Easy Mode</string>
+    <string name="easy_quest1text">Tap the BLUE circle.</string>
+    <string name="easy_quest2text">Tap the RED rectangle.</string>
+    <string name="easy_quest3text">Which among these is not a rectangle?</string>
+    <string name="easy_quest4text">Tap the shape that is in the middle.</string>
+    <string name="easy_quest5text">Which among the shapes is located below the score?</string>
+    <string name="title_activity_easy_mode1">Easy Mode - Q #1</string>
+    <string name="title_activity_easy_mode2">Easy Mode - Q #2</string>
+    <string name="title_activity_easy_mode3">Easy Mode - Q #3</string>
+    <string name="title_activity_easy_mode4">Easy Mode - Q #4</string>
+    <string name="title_activity_easy_mode5">Easy Mode - Q #5</string>
+    <!-- HARD MODE -->
+    <string name="modeHard">Hard Mode</string>
+    <string name="hard_quest1text">Select the word with the color of YELLOW.</string>
+    <string name="hard_quest2text">Select the word whose text is in RED.</string>
+    <string name="hard_quest3text">Which of these words has the color ORANGE?</string>
+    <string name="hard_quest4text">Which among these colors is found in a rainbow?</string>
+    <string name="hard_quest5text">Tap the shape whose background color is PINK (not the color of the word).</string>
+    <string name="title_activity_hard_mode1">Hard Mode - Q #1</string>
+    <string name="title_activity_hard_mode2">Hard Mode - Q #2</string>
+    <string name="title_activity_hard_mode3">Hard Mode - Q #3</string>
+    <string name="title_activity_hard_mode4">Hard Mode - Q #4</string>
+    <string name="title_activity_hard_mode5">Hard Mode - Q #5</string>
+    <!-- RESULTS -->
+    <string name="title_activity_results">Results</string>
+    <string name="backToMainMenu">&#60; &#60; Back to main menu</string>
+    <!-- INSTRUCTIONS -->
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="instructionText1">1. Use your finger to tap the screen.</string>
+    <string name="instructionText2">2. Read the instructions carefully.</string>
+    <string name="instructionText3">3. Pass this game.</string>
+    <!-- SETTINGS -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_timer">Show timer on levels</string>
+    <string name="pref_description_timer">Display whether to show time during level progress or not.</string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">Guest</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- CREDITS -->
+    <string name="title_activity_credits">Credits</string>
+
+</resources>

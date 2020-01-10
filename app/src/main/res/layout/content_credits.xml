@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.testapp.CreditsActivity"
+    tools:showIn="@layout/activity_credits">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_credits"
+        android:id="@+id/titleCredits"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleCredits"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Manager"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtPos1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adapang, Jonie Angelica"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtStaff1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senior Programmer"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtPos2"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decena, Jeanne Kevin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtStaff2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Junior Programmer"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtPos3"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payas, Adrian Mark"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtStaff3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Researcher"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtPos4"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolinta, Aldrynn Jan"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtStaff4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documenters"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtPos5"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Osman, Abdalla"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtStaff5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yangos, Jackelyn"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txtStaff6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Resources used"
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:id="@+id/cred_ResUsed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="GIMP, Android Studio 2.1.2"
+            android:id="@+id/cred_ResUsed_desc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Copyright 2016. All rights reserved."
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txtCopyright"/>
+
+    </LinearLayout>
+</RelativeLayout>

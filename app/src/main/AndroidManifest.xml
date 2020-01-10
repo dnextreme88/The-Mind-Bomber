@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.testapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- DEFAULT: @style/AppTheme -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LevelsActivity"
+            android:label="@string/title_activity_levels"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InstructionsActivity"
+            android:label="@string/title_activity_instructions"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CreditsActivity"
+            android:label="@string/title_activity_credits"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EasyMode1Activity"
+            android:label="@string/title_activity_easy_mode1"
+            android:parentActivityName=".LevelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EasyMode2Activity"
+            android:label="@string/title_activity_easy_mode2"
+            android:parentActivityName=".EasyMode1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.EasyMode1Activity" />
+        </activity>
+        <activity
+            android:name=".EasyMode3Activity"
+            android:label="@string/title_activity_easy_mode3"
+            android:parentActivityName=".EasyMode2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.EasyMode2Activity" />
+        </activity>
+        <activity
+            android:name=".EasyMode4Activity"
+            android:label="@string/title_activity_easy_mode4"
+            android:parentActivityName=".EasyMode3Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.EasyMode3Activity" />
+        </activity>
+        <activity
+            android:name=".EasyMode5Activity"
+            android:label="@string/title_activity_easy_mode5"
+            android:parentActivityName=".EasyMode4Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.EasyMode4Activity" />
+        </activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/title_activity_results"
+            android:parentActivityName=".EasyMode1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HardMode1Activity"
+            android:label="@string/title_activity_hard_mode1"
+            android:parentActivityName=".LevelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.LevelsActivity" />
+        </activity>
+        <activity
+            android:name=".HardMode2Activity"
+            android:label="@string/title_activity_hard_mode2"
+            android:parentActivityName=".HardMode1Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.HardMode1Activity" />
+        </activity>
+        <activity
+            android:name=".HardMode3Activity"
+            android:label="@string/title_activity_hard_mode3"
+            android:parentActivityName=".HardMode2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.HardMode2Activity" />
+        </activity>
+        <activity
+            android:name=".HardMode4Activity"
+            android:label="@string/title_activity_hard_mode4"
+            android:parentActivityName=".HardMode3Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.HardMode3Activity" />
+        </activity>
+        <activity
+            android:name=".HardMode5Activity"
+            android:label="@string/title_activity_hard_mode5"
+            android:parentActivityName=".HardMode4Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.testapp.HardMode4Activity" />
+        </activity>
+    </application>
+
+</manifest>

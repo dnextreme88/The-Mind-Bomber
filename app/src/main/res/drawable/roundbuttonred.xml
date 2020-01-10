@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <item>
+        <shape
+            android:shape="oval">
+            <size
+                android:width="50dp"
+                android:height="75dp" />
+            <solid
+                android:color="#FF0000" />
+            <!-- OLD VALUE: #59D5FE -->
+        </shape>
+    </item>
+</selector>

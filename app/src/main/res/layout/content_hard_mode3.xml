@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/tealBG"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.testapp.HardMode3Activity"
+    tools:showIn="@layout/activity_hard_mode3">
+    <!-- LEVEL TIMER -->
+    <Chronometer
+        android:id="@+id/chronometer8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtquestion_number8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtquestion_number8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Question" />
+
+    <TextView
+        android:id="@+id/txtScore8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Score: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnHard9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/txtquestion_number8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnHard10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAL"
+        android:textColor="@color/brown"
+        android:textSize="24sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btnHard9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnHard11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignTop="@+id/btnHard9"
+        android:layout_alignRight="@+id/txtScore8"
+        android:layout_alignEnd="@+id/txtScore8" />
+
+    <Button
+        android:id="@+id/btnHard12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRAY"
+        android:textColor="@color/violet"
+        android:textSize="24sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/btnHard11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hard_quest3text"
+        android:textColor="@color/tealHint"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btnHard10"
+        android:layout_alignRight="@+id/btnHard12"
+        android:layout_alignEnd="@+id/btnHard12" />
+
+</RelativeLayout>

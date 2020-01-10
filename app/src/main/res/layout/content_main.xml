@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/greenLight"
+    tools:context="com.mycompany.testapp.MainActivity">
+    <!-- layout_width before was "match_parent", changed for testing purposes (since it looks distorted on larger devices) -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logo"
+        android:scaleType="center"
+        android:cropToPadding="false"
+        android:contextClickable="false"
+        android:baselineAlignBottom="false"
+        android:layout_above="@+id/btnNewGame"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/social_fb"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/social_facebook"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/social_twitter"
+        android:layout_toStartOf="@+id/social_twitter" />
+
+    <ImageView
+        android:id="@+id/social_twitter"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/social_twitter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, "
+        android:textAlignment="center"
+        android:textColor="@color/tealHint"
+        android:layout_below="@+id/appLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menuNewGame"
+        android:textColor="@color/greenDark"
+        android:layout_marginTop="24dp"
+        android:onClick="startNewGame"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnInstructions"
+        android:layout_alignStart="@+id/btnInstructions"
+        android:layout_alignRight="@+id/btnInstructions"
+        android:layout_alignEnd="@+id/btnInstructions" />
+
+    <Button
+        android:id="@+id/btnInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/menuInstructions"
+        android:textColor="@color/greenDark"
+        android:onClick="showInstructions"
+        android:layout_below="@+id/btnNewGame"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/menuSettings"
+        android:textColor="@color/greenDark"
+        android:onClick="showSettings"
+        android:layout_below="@+id/btnInstructions"
+        android:layout_alignLeft="@+id/btnInstructions"
+        android:layout_alignStart="@+id/btnInstructions"
+        android:layout_alignRight="@+id/btnInstructions"
+        android:layout_alignEnd="@+id/btnInstructions" />
+
+    <Button
+        android:id="@+id/btnCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/menuCredits"
+        android:textColor="@color/greenDark"
+        android:onClick="showCredits"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnSettings"
+        android:layout_alignStart="@+id/btnSettings"
+        android:layout_alignRight="@+id/btnSettings"
+        android:layout_alignEnd="@+id/btnSettings" />
+
+</RelativeLayout>
